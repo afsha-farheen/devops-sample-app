@@ -1,0 +1,11 @@
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: echo "Hello, world!"
+    displayName: 'Say hello'
+  - script: node app.js
+    displayName: 'Run sample code'
